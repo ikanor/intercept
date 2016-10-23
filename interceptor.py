@@ -4,7 +4,7 @@ actions.
 """
 
 
-class intercept:
+def intercept(actions: dict={}):
     """
     Decorates a function and handles any exceptions that may rise.
 
@@ -83,24 +83,23 @@ class intercept:
     interceptor.CustomError: inner exception
     """
 
-    def __init__(self, actions: dict={}):
-        self.actions = actions
+    for action in actions.values():
+        if type(action) is not returns and type(action) is not raises:
+            raise InterceptorError('Actions must be declared as `returns` or `raises`')
 
-        for action in actions.values():
-            if type(action) is not returns and type(action) is not raises:
-                raise InterceptorError('Actions must be declared as `returns` or `raises`')
-
-    def __call__(self, f):
+    def decorated(f):
         def wrapped(*args, **kargs):
             try:
                 return f(*args, **kargs)
             except Exception as e:
-                if e.__class__ in self.actions:
-                    return self.actions[e.__class__](e)
+                if e.__class__ in actions:
+                    return actions[e.__class__](e)
                 else:
                     raise
 
         return wrapped
+
+    return decorated
 
 
 class returns:
