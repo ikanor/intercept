@@ -2,8 +2,8 @@ from expects import *
 
 import doctest
 
-import interceptor
-from interceptor import intercept, returns, raises, InterceptorError
+import intercept as mod
+from intercept import intercept, returns, raises, InterceptorError
 
 
 with description('Interceptor decorator'):
@@ -11,7 +11,7 @@ with description('Interceptor decorator'):
     with context('Doc Tests'):
 
         with it('runs ok'):
-            failed, tested = doctest.testmod(interceptor)
+            failed, tested = doctest.testmod(mod)
             expect(failed).to(equal(0))
 
     with context('Actions'):

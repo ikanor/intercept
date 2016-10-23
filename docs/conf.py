@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# interceptor documentation build configuration file, created by
+# intercept documentation build configuration file, created by
 # sphinx-quickstart on Sun Jan  6 09:55:26 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -51,7 +51,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'interceptor'
+project = u'intercept'
 copyright = u'2016, ikanor'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -175,7 +175,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'interceptordoc'
+htmlhelp_basename = 'interceptdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -194,7 +194,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'interceptor.tex', u'interceptor Documentation',
+  ('index', 'intercept.tex', u'intercept Documentation',
    u'ikanor', 'manual'),
 ]
 
@@ -224,7 +224,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'interceptor', u'interceptor Documentation',
+    ('index', 'intercept', u'intercept Documentation',
      [u'ikanor'], 1)
 ]
 
@@ -239,8 +239,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ( 
-    'index', 'interceptor', u'interceptor Documentation',
-   'Franky Rodríguez', 'interceptor', 'Gracefully intercept your exceptions.',
+    'index', 'intercept', u'intercept Documentation',
+   'Franky Rodríguez', 'intercept', 'Gracefully intercept your exceptions.',
    'Miscellaneous'),
 ]
 

@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 
 setup(
-    name='interceptor',
+    name='intercept',
     description='Capture your exceptions with a decorator.',
     maintainer='Franky Rodriguez',
     maintainer_email='prados@gmail.com',

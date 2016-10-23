@@ -80,7 +80,7 @@ def intercept(actions: dict={}):
     >>> fail()
     Traceback (most recent call last):
     ...
-    interceptor.CustomError: inner exception
+    intercept.CustomError: inner exception
     """
 
     for action in actions.values():

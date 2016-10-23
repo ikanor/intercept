@@ -1,6 +1,6 @@
 **********
-interceptor
+intercept
 **********
 
-.. automodule:: interceptor
+.. automodule:: intercept
    :members:

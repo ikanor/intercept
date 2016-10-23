@@ -1,14 +1,14 @@
-interceptor
+intercept
 ===========
 
-Intercept your Python exceptions! As awesome as driving a real Interceptor.
+Intercept your Python exceptions! As awesome as driving a real interceptor!
 
 ![As awesome as this.](Anakin_jedi_interceptor.jpg)
 
 Usage
 -----
 
-You can use `interceptor` to return a value or raise a specific error when the declared exceptions are risen:
+You can use `intercept` to return a value or raise a specific error when the declared exceptions are risen:
 
 ```python
 @intercept({
