@@ -1,0 +1,5 @@
+mamba==0.8.6
+doublex==1.8.2
+expects==0.7.2
+doublex-expects==0.6.0
+pep8==1.7.0
