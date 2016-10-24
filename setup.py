@@ -9,7 +9,7 @@ setup(
     description='Capture your exceptions with a decorator.',
     maintainer='Franky Rodriguez',
     maintainer_email='prados@gmail.com',
-    version='0.1',
+    version='0.1.2',
     url='https://github.com/ikanor/interceptor',
     license='MIT',
     classifiers=[
